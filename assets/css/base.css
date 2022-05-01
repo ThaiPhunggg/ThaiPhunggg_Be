@@ -1,0 +1,276 @@
+*{
+  box-sizing: border-boxs;
+}
+.white{
+  color: #fff;
+}
+.center{
+  text-align: center;
+}
+.container1{
+  width: 1110px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.container2{
+  width: 100%;
+  padding: 100px 0;
+}
+.flex_col{
+  display: flex;
+  flex-direction: column;
+}
+.flex_row{
+  display: flex;
+}
+h1{
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+h2{
+  font-size: 25px;
+  font-weight: 550;
+  margin: 0 0;
+}
+p{
+  font-size: 18px;
+  color: #808080;
+  margin: 0 0 8px;
+}
+
+/* responsive */
+/* PC */
+@media only screen and (min-width:64.0625em){
+  .left_container2 {
+    display: none;
+  }
+}
+/* mobile and tablet */
+@media only screen and (max-width:64em){
+  .left_container2 {
+    display: none;
+  }
+  #home .home1{
+    margin: 150px 40px;
+  }
+  .pre_btn{
+    left: 0;
+  }
+  .next_btn{
+    right: 0;
+  }
+  #about .flex_row{
+    flex-wrap: wrap;
+  }
+  #about .grid2{
+    width: 100%;
+  }
+  #about .grid2:first-child{
+    width: 100%;
+  }
+  .about_para{
+    width: 100%;
+    padding: 0 15px;
+  }
+  .about_para h1, 
+  .about_para p{
+    padding: 10px 0;
+    margin-bottom: 10px;
+  }
+  #about .grid2:last-child{
+    width: 100%;
+    padding: 0 15px;
+    height: auto;
+  }
+  #about img{
+    width: 100%;
+    height: auto;
+  }
+  #service .flex_row{
+    flex-wrap: wrap;
+  }
+  #service .container1 .grid2{
+    width: 100%;
+  }
+  .gallery_pic img {
+    width: 100%;
+    /* margin-bottom: 39px; */
+  }
+}
+/* tablet */
+@media only screen and (min-width:46.25em) and (max-width:63.9375em){
+  #header .grid6{
+    padding: 0px 15px;
+  }
+  #header .grid6 h2{
+    font-size: 24px;
+  }
+  #header .logo{
+    width: 20%;
+  }
+  .header .nav{
+    width: 80%;
+  }
+  .slide_content {
+    margin: 0 20px;
+  }
+  .team_cards{
+    flex-wrap: wrap;
+  }
+  .team_cards .grid4{
+    width: 50%;
+  }
+  #service .flex_row{
+    flex-wrap: wrap;
+  }
+  #service .container1 .grid2{
+    width: 100%;
+  }
+  #service h1{
+    justify-content: center;
+    text-align: center;
+  }
+  #service2 .flex_row{
+    flex-wrap: wrap;
+  }
+  #service2 .service_card{
+    width: 50%;
+  }
+  .gallery_pic{
+    width: 50%;
+  }
+}
+/* mobile */
+@media only screen and (max-width:46.1875em){
+  p{
+    font-size: 13px;
+  }
+  #header{
+    height: 50px;
+  }
+  #header .nav{
+    display: none;
+  }
+  #header .logo img{
+    height: 50px;
+  }
+  #header .logo{
+    padding-top: 0;
+  }
+  .slider{
+    padding-bottom: 40px;
+  }
+  #home{
+    padding: 50px 5px;
+  }
+  .slider{
+    margin-top: 16%;
+  }
+  .slide{
+    margin: 0;
+  }
+  .slide_content{
+    margin: 0;
+    padding: 35px;
+  }
+  .slide h1 {
+    font-size: 21px;
+  }
+  .slide h2 {
+    margin: -11px 0 30px;
+    font-size: 17px;
+  }
+  .slide p {
+    font-size: 8px;
+  }
+  .slide .btn {
+    width: 180px;
+  }
+  .manual_nav{
+    margin-top: 3%;
+  }
+  .pre_btn,
+  .next_btn{
+    top: calc(45% - 40px) !important;
+  }
+  #home{
+    height: 600px;
+  }
+  #home .home1{
+    margin-top: 21px;
+  }
+  .team_cards{
+    flex-wrap: wrap;
+  }
+  .team_cards .grid4{
+    width: 100%;
+  }
+  #service .container1 .grid2:first-child img {
+    width: 100%;
+    height: auto;
+  }
+  #service h1 {
+    text-align: center;
+  }
+  .service_card{
+    width: 100%;
+  }
+  .service_cards{
+    flex-wrap: wrap;
+  }
+  .facts_heading h2 {
+    margin: 20px 13px 10px;
+  }
+  .facts_cards .flex_card{
+    width: 100%;
+  }
+  .facts_cards{
+    flex-wrap: wrap;
+  }
+  .gallery_pics{
+    flex-wrap: wrap;
+  }
+  .gallery_pic{
+    width: 100%;
+  }
+  .blog_cards{
+    flex-wrap: wrap;
+  }
+  .blog_card {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .right{
+    width: 100%;
+    display: block;
+  }
+  .right_container {
+    text-align: center;
+    padding: 0;
+    float: none;
+    margin: 0 auto;
+  }
+  .left_container2 {
+    display: block;
+  }
+  .left_container2 a{
+    color: black;
+  }
+  .left{
+    display: none;
+  }
+  .contact_form .flex_row{
+    flex-wrap: wrap;
+  }
+  .contact_form .email {
+    margin-bottom: -4px;
+    margin-top: -6px;
+  }
+  .contact_form .name,
+  .contact_form .email{
+    width: 100%;
+  }
+
+
+}
+
